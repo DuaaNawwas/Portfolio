@@ -4,16 +4,23 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
 }
+*::-webkit-scrollbar {
+	display: none;
+}
+
 body {
 	font-family: "Poppins", sans-serif;
 }
+
 #hero {
 	background-image: url(./images/hero-bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
-	position: relative;
+
 	height: 100vh;
 	width: 100vw;
 	object-fit: cover;
@@ -24,7 +31,6 @@ body {
 	padding: 30px;
 	align-items: center;
 	margin-bottom: 10%;
-	position: sticky;
 }
 #hero nav img {
 	align-self: center;
@@ -115,3 +121,85 @@ body {
 		margin-bottom: 20%;
 	}
 }
+/* start about section styles */
+#about-section {
+	background-color: black;
+	color: #fbeff2;
+	width: 100%;
+	height: 100vh;
+	padding: 6%;
+}
+#about-section h2 {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 2.25rem;
+	letter-spacing: 0.03em;
+	margin: 0 0 1.5% 7.78%;
+}
+#about-box {
+	width: 80vw;
+	height: 65vh;
+	display: grid;
+
+	grid-template-columns: auto auto auto;
+	align-items: center;
+	margin: 0 auto;
+}
+#line {
+	width: 7px;
+	height: 55vh;
+	background-color: #fbeff2;
+	justify-self: end;
+}
+#about-txt {
+	width: 42vw;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 2.25rem;
+	letter-spacing: 0.03em;
+}
+#about-txt p {
+	padding: 20px;
+}
+#about-txt p:not(:first-child) {
+	text-transform: uppercase;
+	padding: 0 20px;
+}
+#about-box img {
+	justify-self: center;
+}
+@media screen and (max-width: 991px) {
+	#about-box {
+		grid-template-columns: auto;
+	}
+	#line {
+		display: none;
+	}
+	#about-txt {
+		text-align: center;
+		font-size: 1.2rem;
+		width: 100%;
+		grid-row: 2/3;
+	}
+	#about-txt p:not(:first-child) {
+		font-size: 1rem;
+		line-height: 1rem;
+	}
+	#about-box img {
+		grid-row: 1/2;
+	}
+}
+@media screen and (max-width: 600px) {
+	#about-box {
+		grid-template-columns: auto;
+	}
+	#about-box img {
+		transform: scale(0.7);
+	}
+	#about-txt {
+		text-align: center;
+		font-size: 1rem;
+		line-height: 1.5rem;
+		width: 100%;
+	}
+} ;
