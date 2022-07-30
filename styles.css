@@ -202,4 +202,71 @@ body {
 		line-height: 1.5rem;
 		width: 100%;
 	}
-} ;
+}
+/* start my work section styling */
+#mywork-section {
+	background-color: #bda2a9;
+	color: #ffffff;
+	width: 100%;
+	height: 100vh;
+	overflow: scroll;
+	padding: 2% 6%;
+}
+#mywork-section h2 {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 2.25rem;
+	letter-spacing: 0.03em;
+	padding: 2%;
+	margin: 0 auto 3% auto;
+	text-align: center;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card {
+	background-color: #d7c7cb;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	transition: 0.5s;
+}
+.card:hover {
+	box-shadow: 4px 4px 4px rgba(122, 110, 110, 0.25);
+	transform: translateY(5px);
+}
+
+.card h5 {
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 2.25rem;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+.card-text {
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	letter-spacing: 0.03em;
+	color: #4e4e4e;
+}
+.list-group-item {
+	background-color: #d7c7cb;
+}
+.card-body a {
+	color: black;
+}
+.card-body a:first-child {
+	float: left;
+}
+.card-body a:last-child {
+	float: right;
+}
+.card-body a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: #4e4e4e;
+	border-radius: 5px;
+	padding: 3px;
+}
+/* start footer styling */
+footer {
+	height: 30vh;
+	background-color: #f5f5f5;
+}
