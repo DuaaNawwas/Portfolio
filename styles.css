@@ -11,15 +11,13 @@
 	display: none;
 }
 html {
-	height: 100vh;
-	overflow: scroll;
 	scroll-snap-type: y mandatory;
 	scroll-snap-stop: always;
 }
 #hero,
 #about-section,
 #mywork-section,
-#contact {
+#contact-sec {
 	scroll-snap-align: start;
 	scroll-snap-stop: always;
 }
@@ -280,21 +278,22 @@ body {
 	border-bottom: 2px solid rgba(151, 127, 127, 0.719);
 	border-radius: 10px;
 }
-/* start footer styling */
-footer {
-	height: 45vh;
+/* start contact section styling */
+#contact-sec {
+	height: 35vh;
 	background-color: #f5f5f5;
-	padding: 3% 3% 1.5% 3%;
+	padding: 3% 3% 0 3%;
 	text-align: center;
 }
-footer h2 {
+
+#contact-sec h2 {
 	text-transform: uppercase;
 	font-weight: 900;
 	font-size: 2.25rem;
 	letter-spacing: 0.03em;
 	margin: 0 0 2% 0;
 }
-footer #info div {
+#contact-sec #info div {
 	display: inline-block;
 	width: 119.48px;
 	margin: 5px 10px 2% 10px;
@@ -303,44 +302,61 @@ footer #info div {
 #info {
 	padding: 10px;
 }
-footer div p {
+#contact-sec div p {
 	visibility: hidden;
 	transition: visibility 0.5s ease-in;
 }
-footer a {
+#contact-sec a {
 	text-decoration: none;
 	color: black;
 }
-footer a p {
+#contact-sec a p {
 	margin-top: 1%;
 }
-#dn {
-	color: #bda2a9;
-}
-footer img {
+
+#contact-sec img {
 	padding: 1px;
 	transform: scale(0.8);
 }
-footer div:hover a {
+#contact-sec div:hover a {
 	color: black;
 }
-footer div:not(#info) {
+#contact-sec div:not(#info) {
 	transition: all 0.5s ease-in;
 }
-footer div:hover:not(#info) {
+#contact-sec div:hover:not(#info) {
 	background-color: #bda2a983;
 	border-radius: 5px;
 	transform: scale(1.1);
 }
-footer div:hover:not(#info) p {
+#contact-sec div:hover:not(#info) p {
 	visibility: visible;
 }
 @media screen and (max-width: 600px) {
 	#info,
-	footer h2 {
+	#contact-sec h2 {
 		transform: scale(0.95);
 	}
-	footer {
-		height: 45vh;
+	#contact-sec {
+		height: auto;
 	}
+}
+@media screen and (min-width: 600px) and (max-width: 991px) {
+	#contact-sec {
+		height: auto;
+	}
+	footer {
+		height: auto;
+	}
+}
+/* footer styling */
+footer {
+	height: 4vh;
+	background-color: #bda4a485;
+	padding-top: 1px;
+	text-align: center;
+}
+#dn {
+	color: #000000;
+	text-decoration: none;
 }
