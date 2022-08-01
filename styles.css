@@ -276,12 +276,9 @@ body {
 	color: black;
 }
 
-.card-body a:hover {
-	text-decoration: none;
-	color: white;
-	background-color: #4e4e4e;
-	border-radius: 5px;
-	padding: 3px;
+.card-body a img:hover {
+	border-bottom: 2px solid rgba(151, 127, 127, 0.719);
+	border-radius: 10px;
 }
 /* start footer styling */
 footer {
